@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document A1</title>
+</head>
+<body>
+<!-- barra de navegación -->
+    <header>
+
+        <h1>Ejercicios Iniciales</h1>
+
+    </header>
+
+    <main>
+
+        <!-- Este es un texto de un elemento -->
+
+        <h2>Este es un ejercicio para cambiar el contenido de un elemento</h2>
+
+        <p id="demo">Parrafo que vamos a cambiar con javaScript</p> 
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML='texto cambiato, Hola js'">Cambiar contenido</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML='Parrafo que vamos a cambiar con javaScript'">Volver al contenido</button>
+
+        <hr>
+
+        <h1>practica cambiar texto</h1>
+        <p id="on">encender </p>
+        <button type="button" onclick="document.getElementById ('on').innerHTML='Incercion de cadena de texto '">innerHTML</button>
+        <button type="button" onclick="document.getElementById ('on').innerHTML='Metodo para cambiar el id'">getElementById</button>
+
+        <hr>
+
+        <h2>Encendiendo y apagando</h2>
+        <button onclick="document.getElementById('miImagen').src='./img/on.png'">Encender</button>
+        <img src="./img/off.png" style="height:300px " alt="off.png" id="miImagen">
+        <button onclick="document.getElementById('miImagen').src='./img/off.png'">Apagar</button>
+
+        <hr>
+
+        <h2>Cambiando el estilo de una etiqueta HTML con javaScript</h2>
+        <p id="estilo" >Este es el texto a cabiar estilo</p>
+        <button onclick="cambiarFont('35px')">Cambiar Estilo</button>
+        <button onclick="cambiarFont('')" ">Tamaño original</button>
+
+        <hr>
+        <h2>Practica 1a</h2>
+        <p id="practica" >cambiar color de texto</p> 
+        <button onclick="document.getElementById('practica').style.color= ''">color</button>
+        <button onclick="document.getElementById('practica').style.fontStyle= 'red'">otro color</button>
+
+        <hr>
+
+        <h2>Cambiando un elemento de undisplay  de un elemento HTML con javaScript</h2>
+        <div id="ocultar" class="row">
+            <p>Texto a ocultar con la imagen</p>
+            <img src="./img/413838-PDWOPU-82.jpg" alt="" width="300">
+        </div>
+        <button type="button" onclick="ocultar()">Ocultar</button>
+        <button type="button" onclick="document.getElementById('ocultar').style.display='block'">Mostrar</button>
+
+        <hr>
+        <p id="insertar" style="font-size: 30px;"></p>
+            
+            <
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Antes de finalizar el codigo puedo colocar codigo javaScrip -->
+
+    <script>
+        document.getElementById('insertar').innerHTML='texto insertado desde un Script';
+
+        // FUNCION PARA OCULTAR LOS ELEMETOS
+        function ocultarElemento(){
+            document.getElementById('ocultar').style.display='none'
+        }
+
+        // FUNCION PARA MOSTRAR EL CODIGO
+        function mostrarElemento(){
+            document.getElementById('ocultar').style.display='block'
+        }
+
+
+        // FUNCION PARA CAMBIAR EL TAMAÑO
+        function cambiarFont(valor){
+            document.getElementById('estilo').style.fontSize= valor
+        }
+
+
+        // FUNCION PARA CAMBIAR EL CONTENIDO
+    </script>
+    
+</body>
+</html>
+
+
+       
